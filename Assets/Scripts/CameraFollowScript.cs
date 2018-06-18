@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//follows target from fixed location
 public class CameraFollowScript : MonoBehaviour {
 
 	public Transform target;

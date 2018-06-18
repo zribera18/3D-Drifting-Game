@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+// follows target with aeriel view, used for top down 
 public class CameraLookAtScript : MonoBehaviour {
 
 	public Transform target;

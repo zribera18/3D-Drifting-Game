@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// fixed camera position, keeps target in center of view
 public class CameraDungeonScript : MonoBehaviour {
 
 	public GameObject target;
@@ -18,6 +19,6 @@ public class CameraDungeonScript : MonoBehaviour {
 		Vector3 position = Vector3.Lerp(transform.position, desiredPosition, Time.deltaTime * damping);
 		transform.position = position;
 
-		transform.LookAt(target.transform.position); 
+		transform.LookAt(target.transform.position);
 	}
 }
