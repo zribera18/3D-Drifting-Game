@@ -37,16 +37,16 @@ public class SimpleCarScript : MonoBehaviour {
 	  // }
 
 	  //RWD
-	  for (int i = 2; i < 4; i++)
-	  {
-	      wheelCollider[i].motorTorque = torque;
-	  }
-
-	  //AWD
-	  // for (var i = 0; i < 4; i++)
+	  // for (int i = 2; i < 4; i++)
 	  // {
 	  //     wheelCollider[i].motorTorque = torque;
 	  // }
+
+	  //AWD
+	  for (var i = 0; i < 4; i++)
+	  {
+	      wheelCollider[i].motorTorque = torque;
+	  }
 
 	  if (Input.GetKey("left shift")) {
 	    maxTorque = 700.0f;
